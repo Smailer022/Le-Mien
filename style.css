@@ -1,0 +1,173 @@
+:root {
+  --white: #ffffff;
+  --white-pale: #fefae0;
+  --pale-black: #232b99;
+  --madera: #af8644;
+  --pale-madera: #e0c193;
+  --dark-madera: #f1b36e;
+  --pale-madera1: #c88439;
+  --madera2: #b57339;
+  --yellow: #ffd700;
+  --gray: #bbbbbb;
+  --dark-blue: #002942;
+}
+
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Monoton', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+body {
+  background-color: var(--white-pale) !important;
+}
+
+/* Navbar */
+.navbar {
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-family: "Monoton", sans-serif;
+  background-color: var(--madera2);
+}
+
+.navbar-collapse {
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item a {
+  font-size: 16px;
+  margin: 0 10px;
+  color: var(--white);
+  transition: all ease-in 0.5s;
+}
+
+.nav-item:hover {
+  text-decoration: overline wavy;
+}
+
+/* Carousel */
+.carousel-item {
+  height: 659px;
+  min-height: 300px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+.carousel-caption {
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 100px;
+}
+
+.carousel-caption h5 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* About Me */
+.about {
+  margin-top: 100px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.mark-text {
+  font-weight: bold;
+}
+
+.price-text {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Menu */
+.menu {
+  padding-top: 100px;
+}
+
+.title-menu {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.row {
+  height: 250px;
+}
+
+.row img {
+  width: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  box-shadow: 2px 4px 10px var(--pale-black);
+}
+
+.colum {
+  margin: 20px 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.position-relative:hover .overlay {
+  opacity: 1;
+}
+
+.position-relative {
+  display: inline-block;
+}
+
+.overlay h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.overlay p {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* Reservation */
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-collapse {
+    margin-bottom: 10px;
+  }
+
+  .nav-item {
+    margin-bottom: 20px;
+  }
+}
