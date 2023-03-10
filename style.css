@@ -95,6 +95,7 @@ body {
 /* Menu */
 .menu {
   padding-top: 100px;
+  height: 950px;
 }
 
 .title-menu {
@@ -116,7 +117,7 @@ body {
 }
 
 .colum {
-  margin: 20px 0;
+  margin: 35px 0;
 }
 
 .overlay {
@@ -156,8 +157,46 @@ body {
 }
 
 /* Reservation */
+.form {
+  margin-bottom: 200px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.title-reservaciones {
+  font-weight: 700;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.form-control {
+  resize: none;
+}
+/* Footer */
+footer {
+  background-color: var(--madera2);
+}
+
+.footer-text {
+  padding-top: 18px;
+  font-weight: 500;
+  font-family: "Lexend Deca", sans-serif;
+}
 
 /* Media Queries */
+@media screen and (max-width: 992px) {
+  .menu {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu {
+    height: 1250px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar-brand {
     display: none;
@@ -169,5 +208,15 @@ body {
 
   .nav-item {
     margin-bottom: 20px;
+  }
+
+  .menu {
+    height: 3000px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    height: 3300px;
   }
 }
